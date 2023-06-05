@@ -1,8 +1,8 @@
 {
   "rewrites": [
-    { "source": "/api/:url*", "destination": "https://api.openai.com/v1/:url*" },
-    { "source": "/api/:url*/", "destination": "https://api.openai.com/v1/:url*/" },
-    { "source": "/api/:url*", "destination": "http://api.openai.com/v1/:url*" },
-    { "source": "/api/:url*/", "destination": "http://api.openai.com/v1/:url*/" }
+    { "source": ":url*", "destination": "https://api.openai.com/:url*" },
+    { "source": ":url*/", "destination": "https://api.openai.com/:url*/" },
+    { "source": ":url*", "destination": "http://api.openai.com/:url*" },
+    { "source": ":url*/", "destination": "http://api.openai.com/:url*/" }
   ]
 }
